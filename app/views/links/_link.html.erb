@@ -1,0 +1,6 @@
+<%= content_tag(:div, id: dom_id(link), class: "card mb-3") do %>
+    <%= content_tag(:div, class: "card-body") do %>
+        <h5 class="card-title"><%= link.to_param %></h5>
+        <p class="card-text"><%=link_to "Url", link.url %></p>
+    <% end %>
+<% end %>
